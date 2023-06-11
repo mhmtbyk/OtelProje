@@ -16,5 +16,11 @@ namespace OtelProje
         {
             InitializeComponent();
         }
+
+        private void BtnDurumTanimlari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanımlamalar.FrmDurum fr = new Formlar.Tanımlamalar.FrmDurum();
+            fr.Show();
+        }
     }
 }
