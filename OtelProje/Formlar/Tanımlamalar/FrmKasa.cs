@@ -1,4 +1,4 @@
-﻿using OtelYeniProje.Entity;
+﻿using OtelProje.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,20 +10,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtelYeniProje.Formlar.Tanımlamalar
+namespace OtelProje.Formlar.Tanımlamalar
 {
-    public partial class FrmBirim : Form
+    public partial class FrmKasa : Form
     {
-        public FrmBirim()
+        public FrmKasa()
         {
             InitializeComponent();
         }
-
-        DbOtelYeniEntities db = new DbOtelYeniEntities();
-        private void FrmBirim_Load(object sender, EventArgs e)
+        DbOtelEntities db = new DbOtelEntities();
+        private void FrmKasa_Load(object sender, EventArgs e)
         {
-            db.TblBirim.Load();
-            bindingSource1.DataSource = db.TblBirim.Local;
+            db.TblKasa.Load();
+            bindingSource1.DataSource = db.TblKasa.Local;
 
             repositoryItemLookUpEditDurum.DataSource = (from x in db.TblDurum
                                                         select new

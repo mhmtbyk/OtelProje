@@ -1,4 +1,5 @@
-﻿using OtelYeniProje.Entity;
+﻿using DevExpress.XtraEditors;
+using OtelProje.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,20 +11,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtelYeniProje.Formlar.Tanımlamalar
+namespace OtelProje.Formlar.Tanımlamalar
 {
-    public partial class FrmBirim : Form
+    public partial class FrmDepartman : Form
     {
-        public FrmBirim()
+        public FrmDepartman()
         {
             InitializeComponent();
         }
-
-        DbOtelYeniEntities db = new DbOtelYeniEntities();
-        private void FrmBirim_Load(object sender, EventArgs e)
+        DbOtelEntities db = new DbOtelEntities();
+        private void FrmDepartman_Load(object sender, EventArgs e)
         {
-            db.TblBirim.Load();
-            bindingSource1.DataSource = db.TblBirim.Local;
+            db.TblDepartman.Load();
+            bindingSource1.DataSource = db.TblDepartman.Local;
 
             repositoryItemLookUpEditDurum.DataSource = (from x in db.TblDurum
                                                         select new
@@ -35,7 +35,15 @@ namespace OtelYeniProje.Formlar.Tanımlamalar
 
         private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
-            db.SaveChanges();
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Bilgiler kaydedilirken hata oluştu, kontrol edip tekrar deneyiniz!");
+            }
         }
     }
 }

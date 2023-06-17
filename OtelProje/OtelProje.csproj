@@ -134,11 +134,59 @@
     <Compile Include="Formlar\Tanımlamalar\FrmBirim.Designer.cs">
       <DependentUpon>FrmBirim.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmDepartman.Designer.cs">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\Tanımlamalar\FrmDurum.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formlar\Tanımlamalar\FrmDurum.Designer.cs">
       <DependentUpon>FrmDurum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmGorev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmGorev.Designer.cs">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmKasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmKasa.Designer.cs">
+      <DependentUpon>FrmKasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmKurlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmKurlar.Designer.cs">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmOda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmOda.Designer.cs">
+      <DependentUpon>FrmOda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmTelefon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmTelefon.Designer.cs">
+      <DependentUpon>FrmTelefon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmUlke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmUlke.Designer.cs">
+      <DependentUpon>FrmUlke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmUrunGrup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Tanımlamalar\FrmUrunGrup.Designer.cs">
+      <DependentUpon>FrmUrunGrup.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

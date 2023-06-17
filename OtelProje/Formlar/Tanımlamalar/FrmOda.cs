@@ -1,4 +1,4 @@
-﻿using OtelYeniProje.Entity;
+﻿using OtelProje.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,20 +10,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtelYeniProje.Formlar.Tanımlamalar
+namespace OtelProje.Formlar.Tanımlamalar
 {
-    public partial class FrmBirim : Form
+    public partial class FrmOda : Form
     {
-        public FrmBirim()
+        public FrmOda()
         {
             InitializeComponent();
         }
-
-        DbOtelYeniEntities db = new DbOtelYeniEntities();
-        private void FrmBirim_Load(object sender, EventArgs e)
+        DbOtelEntities db = new DbOtelEntities();
+        private void FrmOda_Load(object sender, EventArgs e)
         {
-            db.TblBirim.Load();
-            bindingSource1.DataSource = db.TblBirim.Local;
+            db.TblOda.Load();
+            bindingSource1.DataSource = db.TblOda.Local;
 
             repositoryItemLookUpEditDurum.DataSource = (from x in db.TblDurum
                                                         select new
@@ -35,6 +34,12 @@ namespace OtelYeniProje.Formlar.Tanımlamalar
 
         private void gridView1_CellValueChanged(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
         {
+            db.SaveChanges();
+        }
+
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bindingSource1.RemoveCurrent();
             db.SaveChanges();
         }
     }
