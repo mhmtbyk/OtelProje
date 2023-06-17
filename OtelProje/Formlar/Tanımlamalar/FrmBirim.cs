@@ -1,4 +1,4 @@
-﻿using OtelYeniProje.Entity;
+﻿using OtelProje.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OtelYeniProje.Formlar.Tanımlamalar
+namespace OtelProje.Formlar.Tanımlamalar
 {
     public partial class FrmBirim : Form
     {
@@ -18,8 +18,7 @@ namespace OtelYeniProje.Formlar.Tanımlamalar
         {
             InitializeComponent();
         }
-
-        DbOtelYeniEntities db = new DbOtelYeniEntities();
+        DbOtelEntities db = new DbOtelEntities();
         private void FrmBirim_Load(object sender, EventArgs e)
         {
             db.TblBirim.Load();
@@ -39,3 +38,4 @@ namespace OtelYeniProje.Formlar.Tanımlamalar
         }
     }
 }
+

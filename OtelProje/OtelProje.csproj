@@ -196,8 +196,32 @@
     <EmbeddedResource Include="Formlar\Tanımlamalar\FrmBirim.resx">
       <DependentUpon>FrmBirim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmDepartman.resx">
+      <DependentUpon>FrmDepartman.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Tanımlamalar\FrmDurum.resx">
       <DependentUpon>FrmDurum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmGorev.resx">
+      <DependentUpon>FrmGorev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmKasa.resx">
+      <DependentUpon>FrmKasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmKurlar.resx">
+      <DependentUpon>FrmKurlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmOda.resx">
+      <DependentUpon>FrmOda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmTelefon.resx">
+      <DependentUpon>FrmTelefon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmUlke.resx">
+      <DependentUpon>FrmUlke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Tanımlamalar\FrmUrunGrup.resx">
+      <DependentUpon>FrmUrunGrup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

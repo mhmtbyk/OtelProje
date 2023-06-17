@@ -9,9 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using OtelYeniProje.Entity;
+using OtelProje.Entity;
 
-namespace OtelYeniProje.Formlar.Tanımlamalar
+namespace OtelProje.Formlar.Tanımlamalar
 {
     public partial class FrmDurum : Form
     {
@@ -19,8 +19,7 @@ namespace OtelYeniProje.Formlar.Tanımlamalar
         {
             InitializeComponent();
         }
-        DbOtelYeniEntities db = new DbOtelYeniEntities();
-
+        DbOtelEntities db = new DbOtelEntities();
         private void FrmDurum_Load(object sender, EventArgs e)
         {
             db.TblDurum.Load();
@@ -35,9 +34,9 @@ namespace OtelYeniProje.Formlar.Tanımlamalar
             }
             catch (Exception)
             {
-                XtraMessageBox.Show("Lütfen değerleri kontrol edip yeniden giriş yapın!", "Uyarı",  MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+                XtraMessageBox.Show("Lütfen değerleri kontrol edip yeniden giriş yapın!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-           
         }
 
         private void durumuSilToolStripMenuItem_Click(object sender, EventArgs e)

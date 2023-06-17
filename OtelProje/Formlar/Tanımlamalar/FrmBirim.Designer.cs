@@ -1,4 +1,4 @@
-﻿namespace OtelYeniProje.Formlar.Tanımlamalar
+﻿namespace OtelProje.Formlar.Tanımlamalar
 {
     partial class FrmBirim
     {
@@ -51,7 +51,7 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEditDurum});
             this.gridControl1.Size = new System.Drawing.Size(494, 421);
-            this.gridControl1.TabIndex = 1;
+            this.gridControl1.TabIndex = 4;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -115,10 +115,10 @@
         #endregion
 
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEditDurum;
     }
 }
