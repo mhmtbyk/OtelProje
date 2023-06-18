@@ -104,7 +104,7 @@
           </Key>
           <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
-          <Property Name="TC" Type="nchar" MaxLength="10" />
+          <Property Name="TC" Type="nchar" MaxLength="11" />
           <Property Name="Adres" Type="nvarchar" MaxLength="250" />
           <Property Name="Telefon" Type="nvarchar" MaxLength="20" />
           <Property Name="Mail" Type="nvarchar" MaxLength="50" />
@@ -113,6 +113,10 @@
           <Property Name="Departman" Type="int" />
           <Property Name="Gorev" Type="int" />
           <Property Name="Aciklama" Type="nvarchar" MaxLength="250" />
+          <Property Name="KimlikOn" Type="nvarchar" MaxLength="250" />
+          <Property Name="KimlikArka" Type="nvarchar" MaxLength="250" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="20" />
+          <Property Name="Yetki" Type="char" MaxLength="1" />
           <Property Name="Durum" Type="int" />
         </EntityType>
         <EntityType Name="TblTelefon">
@@ -567,7 +571,7 @@
           </Key>
           <Property Name="PersonelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="TC" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="true" />
           <Property Name="Adres" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -580,6 +584,10 @@
           <NavigationProperty Name="TblDepartman" Relationship="Self.FK_TblPersonel_TblDepartman" FromRole="TblPersonel" ToRole="TblDepartman" />
           <NavigationProperty Name="TblDurum" Relationship="Self.FK_TblPersonel_TblDurum" FromRole="TblPersonel" ToRole="TblDurum" />
           <NavigationProperty Name="TblGorev" Relationship="Self.FK_TblPersonel_TblGorev" FromRole="TblPersonel" ToRole="TblGorev" />
+          <Property Name="KimlikOn" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="KimlikArka" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Yetki" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
         </EntityType>
         <EntityType Name="TblTelefon">
           <Key>
@@ -1024,6 +1032,10 @@
           <EntitySetMapping Name="TblPersonel">
             <EntityTypeMapping TypeName="DbOtelModel.TblPersonel">
               <MappingFragment StoreEntitySet="TblPersonel">
+                <ScalarProperty Name="Yetki" ColumnName="Yetki" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="KimlikArka" ColumnName="KimlikArka" />
+                <ScalarProperty Name="KimlikOn" ColumnName="KimlikOn" />
                 <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
                 <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
                 <ScalarProperty Name="TC" ColumnName="TC" />
