@@ -41,6 +41,8 @@
         <AssociationConnector Association="DbOtelModel.FK_ilceler_iller" />
         <AssociationConnector Association="DbOtelModel.FK_TblMisafir_ilceler" />
         <AssociationConnector Association="DbOtelModel.FK_TblMisafir_iller" />
+        <EntityTypeShape EntityType="DbOtelModel.TblUrunHareket" Width="1.5" PointX="7.5" PointY="23.75" />
+        <AssociationConnector Association="DbOtelModel.FK_TblUrunHareket_TblUrun" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

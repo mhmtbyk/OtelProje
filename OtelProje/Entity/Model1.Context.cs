@@ -64,6 +64,8 @@ public partial class DbOtelEntities : DbContext
 
     public virtual DbSet<iller> iller { get; set; }
 
+    public virtual DbSet<TblUrunHareket> TblUrunHareket { get; set; }
+
 }
 
 }

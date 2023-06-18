@@ -102,5 +102,38 @@ namespace OtelProje
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnUrunListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunListesi fr = new Formlar.Urun.FrmUrunListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnUrunKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunKarti fr = new Formlar.Urun.FrmUrunKarti();
+            fr.Show();
+        }
+
+        private void BtnUrunGiris_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunGirisHareketleri fr = new Formlar.Urun.FrmUrunGirisHareketleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnUrunCikis_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunCikisHareketleri fr = new Formlar.Urun.FrmUrunCikisHareketleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnYeniUrunHareketi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Urun.FrmUrunHareketTanimi fr = new Formlar.Urun.FrmUrunHareketTanimi();
+            fr.Show();
+        }
     }
 }
