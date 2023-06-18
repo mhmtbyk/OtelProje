@@ -50,6 +50,7 @@ namespace OtelProje.Formlar.Personel
                 lookUpEditDepartman.EditValue = personel.Departman;
                 lookUpEditGorev.EditValue = personel.Gorev;
             }
+
             lookUpEditDepartman.Properties.DataSource = (from x in db.TblDepartman
                                                          select new
                                                          {

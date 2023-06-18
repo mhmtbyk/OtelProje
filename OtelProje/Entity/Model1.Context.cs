@@ -60,6 +60,10 @@ public partial class DbOtelEntities : DbContext
 
     public virtual DbSet<TblUrunGrup> TblUrunGrup { get; set; }
 
+    public virtual DbSet<ilceler> ilceler { get; set; }
+
+    public virtual DbSet<iller> iller { get; set; }
+
 }
 
 }

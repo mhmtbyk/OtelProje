@@ -40,11 +40,19 @@ public partial class TblMisafir
 
     public Nullable<int> Durum { get; set; }
 
+    public Nullable<int> sehir { get; set; }
+
+    public Nullable<int> ilce { get; set; }
+
 
 
     public virtual TblDurum TblDurum { get; set; }
 
     public virtual TblUlke TblUlke { get; set; }
+
+    public virtual ilceler ilceler { get; set; }
+
+    public virtual iller iller { get; set; }
 
 }
 
