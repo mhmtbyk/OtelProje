@@ -44,6 +44,8 @@ public partial class TblDurum
 
         this.TblUrunGrup = new HashSet<TblUrunGrup>();
 
+        this.TblRezervasyon = new HashSet<TblRezervasyon>();
+
     }
 
 
@@ -96,6 +98,10 @@ public partial class TblDurum
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<TblUrunGrup> TblUrunGrup { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<TblRezervasyon> TblRezervasyon { get; set; }
 
 }
 

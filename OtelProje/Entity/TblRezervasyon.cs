@@ -15,29 +15,26 @@ namespace OtelProje.Entity
 using System;
     using System.Collections.Generic;
     
-public partial class TblOda
+public partial class TblRezervasyon
 {
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public TblOda()
-    {
+    public int RezervasyonID { get; set; }
 
-        this.TblRezervasyon = new HashSet<TblRezervasyon>();
+    public Nullable<int> Misafir { get; set; }
 
-    }
+    public Nullable<System.DateTime> GirisTarih { get; set; }
 
+    public Nullable<System.DateTime> CikisTarih { get; set; }
 
-    public int OdaID { get; set; }
+    public string Kisi { get; set; }
 
-    public string OdaNo { get; set; }
+    public Nullable<int> Oda { get; set; }
 
-    public string Kat { get; set; }
-
-    public string Kapasite { get; set; }
-
-    public string Aciklama { get; set; }
+    public string RezervasyonAdSoyad { get; set; }
 
     public string Telefon { get; set; }
+
+    public string Aciklama { get; set; }
 
     public Nullable<int> Durum { get; set; }
 
@@ -45,9 +42,9 @@ public partial class TblOda
 
     public virtual TblDurum TblDurum { get; set; }
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    public virtual TblMisafir TblMisafir { get; set; }
 
-    public virtual ICollection<TblRezervasyon> TblRezervasyon { get; set; }
+    public virtual TblOda TblOda { get; set; }
 
 }
 

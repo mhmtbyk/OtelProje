@@ -86,6 +86,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entity\Model11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -114,6 +119,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblPersonel.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\TblRezervasyon.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Entity\TblTelefon.cs">
@@ -160,6 +168,42 @@
     </Compile>
     <Compile Include="Formlar\Personel\FrmPersonelListesi.Designer.cs">
       <DependentUpon>FrmPersonelListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmAktifRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmAktifRezervasyon.Designer.cs">
+      <DependentUpon>FrmAktifRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmGecmisRezervasyonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmGecmisRezervasyonlar.Designer.cs">
+      <DependentUpon>FrmGecmisRezervasyonlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmGelecekRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmGelecekRezervasyon.Designer.cs">
+      <DependentUpon>FrmGelecekRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmIptalRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmIptalRezervasyon.Designer.cs">
+      <DependentUpon>FrmIptalRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmRezervasyonKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmRezervasyonKarti.Designer.cs">
+      <DependentUpon>FrmRezervasyonKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmTumRezervasyonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\Rezervasyon\FrmTumRezervasyonlar.Designer.cs">
+      <DependentUpon>FrmTumRezervasyonlar.cs</DependentUpon>
     </Compile>
     <Compile Include="Formlar\Tanımlamalar\FrmBirim.cs">
       <SubType>Form</SubType>
@@ -269,6 +313,24 @@
     <EmbeddedResource Include="Formlar\Personel\FrmPersonelListesi.resx">
       <DependentUpon>FrmPersonelListesi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Rezervasyon\FrmAktifRezervasyon.resx">
+      <DependentUpon>FrmAktifRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Rezervasyon\FrmGecmisRezervasyonlar.resx">
+      <DependentUpon>FrmGecmisRezervasyonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Rezervasyon\FrmGelecekRezervasyon.resx">
+      <DependentUpon>FrmGelecekRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Rezervasyon\FrmIptalRezervasyon.resx">
+      <DependentUpon>FrmIptalRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Rezervasyon\FrmRezervasyonKarti.resx">
+      <DependentUpon>FrmRezervasyonKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\Rezervasyon\FrmTumRezervasyonlar.resx">
+      <DependentUpon>FrmTumRezervasyonlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formlar\Tanımlamalar\FrmBirim.resx">
       <DependentUpon>FrmBirim.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +385,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Entity\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -360,6 +423,7 @@
     <Content Include="Entity\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model11.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

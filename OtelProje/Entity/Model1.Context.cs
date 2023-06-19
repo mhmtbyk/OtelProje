@@ -66,6 +66,8 @@ public partial class DbOtelEntities : DbContext
 
     public virtual DbSet<TblUrunHareket> TblUrunHareket { get; set; }
 
+    public virtual DbSet<TblRezervasyon> TblRezervasyon { get; set; }
+
 }
 
 }
