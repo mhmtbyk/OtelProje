@@ -213,5 +213,58 @@ namespace OtelProje
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnYeniKayitlar_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmYeniKayit fr = new Formlar.WebSite.FrmYeniKayit();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnOnRezervasyonlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmOnRezervasyon fr = new Formlar.WebSite.FrmOnRezervasyon();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnGelenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmGelenMesajlar fr = new Formlar.WebSite.FrmGelenMesajlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnYeniMesaj_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmMesajKarti fr = new Formlar.WebSite.FrmMesajKarti();
+            fr.Show();
+        }
+
+        private void BtnGidenMesajlar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmGidenMesajlar fr = new Formlar.WebSite.FrmGidenMesajlar();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnIletisim_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmIletisim fr = new Formlar.WebSite.FrmIletisim();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnAdresKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmAdresKarti fr = new Formlar.WebSite.FrmAdresKarti();
+            fr.Show();
+        }
+
+        private void BtnHakkimizdaKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.WebSite.FrmHakkimizda fr = new Formlar.WebSite.FrmHakkimizda();
+            fr.Show();
+        }
     }
 }
