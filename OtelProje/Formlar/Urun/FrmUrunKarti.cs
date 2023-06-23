@@ -94,5 +94,25 @@ namespace OtelProje.Formlar.Urun
         {
             this.Close();
         }
+
+        private void Rdb1_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "1";
+        }
+
+        private void Rdb2_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "8";
+        }
+
+        private void Rdb3_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "10";
+        }
+
+        private void Rdb4_CheckedChanged(object sender, EventArgs e)
+        {
+            TxtKdv.Text = "18";
+        }
     }
 }

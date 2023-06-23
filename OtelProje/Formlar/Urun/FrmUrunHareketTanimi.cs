@@ -73,6 +73,8 @@ namespace OtelProje.Formlar.Urun
             urun.Aciklama = TxtAciklama.Text;
             repo.TUpdate(urun);
             XtraMessageBox.Show("Ürün hareketi başarılı bir şekilde güncellendi.");
+
+
         }
     }
 }

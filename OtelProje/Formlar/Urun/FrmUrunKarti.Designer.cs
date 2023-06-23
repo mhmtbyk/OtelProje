@@ -240,6 +240,7 @@
             this.Rdb4.TabStop = true;
             this.Rdb4.Text = "%18";
             this.Rdb4.UseVisualStyleBackColor = true;
+            this.Rdb4.CheckedChanged += new System.EventHandler(this.Rdb4_CheckedChanged);
             // 
             // Rdb3
             // 
@@ -251,6 +252,7 @@
             this.Rdb3.TabStop = true;
             this.Rdb3.Text = "%10";
             this.Rdb3.UseVisualStyleBackColor = true;
+            this.Rdb3.CheckedChanged += new System.EventHandler(this.Rdb3_CheckedChanged);
             // 
             // Rdb2
             // 
@@ -262,6 +264,7 @@
             this.Rdb2.TabStop = true;
             this.Rdb2.Text = "%8";
             this.Rdb2.UseVisualStyleBackColor = true;
+            this.Rdb2.CheckedChanged += new System.EventHandler(this.Rdb2_CheckedChanged);
             // 
             // Rdb1
             // 
@@ -273,6 +276,7 @@
             this.Rdb1.TabStop = true;
             this.Rdb1.Text = "%1";
             this.Rdb1.UseVisualStyleBackColor = true;
+            this.Rdb1.CheckedChanged += new System.EventHandler(this.Rdb1_CheckedChanged);
             // 
             // labelControl2
             // 

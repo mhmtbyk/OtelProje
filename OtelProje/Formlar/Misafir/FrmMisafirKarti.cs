@@ -26,39 +26,49 @@ namespace OtelProje.Formlar.Misafir
         TblMisafir t = new TblMisafir();
         private void FrmMisafirKarti_Load(object sender, EventArgs e)
         {
-            //Güncellenecek kart nilgileri
+            
 
-            if (id != 0)
+            try
             {
-                var misafir = repo.Find(x => x.MisafirID == id);
-                TxtAdSoyad.Text = misafir.AdSoyad;
-                TxtTc.Text = misafir.TC;
-                TxtAdres.Text = misafir.Adres;
-                TxtTelefon.Text = misafir   .Telefon;
-                TxtMail.Text = misafir.Mail;
-                TxtAciklama.Text = misafir.Aciklama;
-                pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
-                pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
-                kimlik1 = misafir.KimlikFoto1;
-                kimlik2 = misafir.KimlikFoto2;
-                lookUpEditSehir.EditValue = misafir.sehir;
-                lookUpEditUlke.EditValue = misafir.Ulke;
-                lookUpEditIlce.EditValue = misafir.ilce;
+                //Güncellenecek kart nilgileri
+                if (id != 0)
+                {
+                    var misafir = repo.Find(x => x.MisafirID == id);
+                    TxtAdSoyad.Text = misafir.AdSoyad;
+                    TxtTc.Text = misafir.TC;
+                    TxtAdres.Text = misafir.Adres;
+                    TxtTelefon.Text = misafir.Telefon;
+                    TxtMail.Text = misafir.Mail;
+                    TxtAciklama.Text = misafir.Aciklama;
+                    pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
+                    pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
+                    kimlik1 = misafir.KimlikFoto1;
+                    kimlik2 = misafir.KimlikFoto2;
+                    lookUpEditSehir.EditValue = misafir.sehir;
+                    lookUpEditUlke.EditValue = misafir.Ulke;
+                    lookUpEditIlce.EditValue = misafir.ilce;
+                }
+                //Ülke listesi
+                lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
+                                                        select new
+                                                        {
+                                                            x.UlkeID,
+                                                            x.UlkeAd
+                                                        }).ToList();
+                //Şehir listesi
+                lookUpEditSehir.Properties.DataSource = (from x in db.iller
+                                                         select new
+                                                         {
+                                                             Id = x.id,
+                                                             Şehir = x.sehir
+                                                         }).ToList();
             }
-            //Ülke listesi
-            lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
-                                                    select new
-                                                    {
-                                                        x.UlkeID,
-                                                        x.UlkeAd
-                                                    }).ToList();
-            //Şehir listesi
-            lookUpEditSehir.Properties.DataSource = (from x in db.iller
-                                                     select new
-                                                     {
-                                                         Id = x.id,
-                                                         Şehir = x.sehir
-                                                     }).ToList();
+            catch (Exception)
+            {
+
+                XtraMessageBox.Show("Bir hata oluştu lütfe nsütunları kontrol ediniz.","Hata",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+            }
+            
             
 
         }

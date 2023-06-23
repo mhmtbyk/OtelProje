@@ -1,4 +1,5 @@
 ﻿using OtelProje.Entity;
+using OtelProje.Formlar.Urun;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,6 +33,13 @@ namespace OtelProje.Formlar.Rezervasyon
                                            x.Telefon,
                                            x.TblDurum.DurumAd
                                        }).ToList();
+        }
+
+        private void gridView1_DoubleClick(object sender, EventArgs e)
+        {
+            FrmRezervasyonKarti fr = new FrmRezervasyonKarti();
+            fr.id = int.Parse(gridView1.GetFocusedRowCellValue("RezervasyonID").ToString());
+            fr.Show();
         }
     }
 }

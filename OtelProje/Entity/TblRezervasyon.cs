@@ -38,6 +38,12 @@ public partial class TblRezervasyon
 
     public Nullable<int> Durum { get; set; }
 
+    public Nullable<int> Kisi2 { get; set; }
+
+    public Nullable<int> Kisi3 { get; set; }
+
+    public Nullable<int> Kisi4 { get; set; }
+
 
 
     public virtual TblDurum TblDurum { get; set; }
