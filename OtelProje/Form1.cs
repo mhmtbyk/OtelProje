@@ -266,5 +266,26 @@ namespace OtelProje
             Formlar.WebSite.FrmHakkimizda fr = new Formlar.WebSite.FrmHakkimizda();
             fr.Show();
         }
+
+        private void BtnAnaSayfa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.AnaSayfa.FrmAnaSayfa fr = new Formlar.AnaSayfa.FrmAnaSayfa();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+        private void BtnUrunStokGrafik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Grafikler.FrmUrunStokGrafik fr = new Formlar.Grafikler.FrmUrunStokGrafik();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+        private void BtnGrafik1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Grafikler.FrmOdaDolulukGrafik fr = new Formlar.Grafikler.FrmOdaDolulukGrafik();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        
     }
 }

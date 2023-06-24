@@ -17,6 +17,9 @@ using System;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 
+using System.Data.Entity.Core.Objects;
+using System.Linq;
+
 
 public partial class DbOtelEntities : DbContext
 {
@@ -81,6 +84,13 @@ public partial class DbOtelEntities : DbContext
     public virtual DbSet<TblMesaj> TblMesaj { get; set; }
 
     public virtual DbSet<TblMesaj2> TblMesaj2 { get; set; }
+
+
+    public virtual ObjectResult<OdaDurum_Result> OdaDurum()
+    {
+
+        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<OdaDurum_Result>("OdaDurum");
+    }
 
 }
 
