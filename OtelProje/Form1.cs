@@ -300,5 +300,11 @@ namespace OtelProje
             fr.MdiParent = this;
             fr.Show();
         }
+
+        private void BtnYetkiler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Admin.FrmSifreIslemleri fr = new Formlar.Admin.FrmSifreIslemleri();
+            fr.Show();
+        }
     }
 }

@@ -66,7 +66,7 @@
             this.BtnWord = new DevExpress.XtraBars.BarButtonItem();
             this.BtnExcel = new DevExpress.XtraBars.BarButtonItem();
             this.BtnSifre = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnYetkiler = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.BtnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
@@ -153,7 +153,7 @@
             this.BtnWord,
             this.BtnExcel,
             this.BtnSifre,
-            this.barButtonItem11,
+            this.BtnYetkiler,
             this.barButtonItem12,
             this.BtnHesapMakinesi,
             this.barButtonItem5,
@@ -486,13 +486,14 @@
             this.BtnSifre.Name = "BtnSifre";
             this.BtnSifre.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnSifre_ItemClick);
             // 
-            // barButtonItem11
+            // BtnYetkiler
             // 
-            this.barButtonItem11.Caption = "Yetkiler";
-            this.barButtonItem11.Id = 41;
-            this.barButtonItem11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
-            this.barButtonItem11.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
-            this.barButtonItem11.Name = "barButtonItem11";
+            this.BtnYetkiler.Caption = "Yetkiler";
+            this.BtnYetkiler.Id = 41;
+            this.BtnYetkiler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.Image")));
+            this.BtnYetkiler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem11.ImageOptions.LargeImage")));
+            this.BtnYetkiler.Name = "BtnYetkiler";
+            this.BtnYetkiler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYetkiler_ItemClick);
             // 
             // barButtonItem12
             // 
@@ -750,7 +751,7 @@
             this.ribbonPageGroup7.ItemLinks.Add(this.BtnWord);
             this.ribbonPageGroup7.ItemLinks.Add(this.BtnExcel);
             this.ribbonPageGroup7.ItemLinks.Add(this.BtnSifre);
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup7.ItemLinks.Add(this.BtnYetkiler);
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
@@ -886,7 +887,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.BarButtonItem BtnSifre;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
+        private DevExpress.XtraBars.BarButtonItem BtnYetkiler;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.BarButtonItem BtnHesapMakinesi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
