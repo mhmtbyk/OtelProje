@@ -62,15 +62,22 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpEditKisi4 = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.lookUpEditKisi3 = new DevExpress.XtraEditors.LookUpEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
             this.lookUpEditKisi2 = new DevExpress.XtraEditors.LookUpEdit();
+            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit8 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEditKisi3 = new DevExpress.XtraEditors.LookUpEdit();
-            this.pictureEdit9 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.lookUpEditKisi4 = new DevExpress.XtraEditors.LookUpEdit();
+            this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit13 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtToplam = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
+            this.TxtOdaNo = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditOda.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
@@ -101,12 +108,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
+            this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtToplam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOdaNo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl6
@@ -256,7 +269,7 @@
             this.groupControl2.Controls.Add(this.BtnGuncelle);
             this.groupControl2.Controls.Add(this.BtnKaydet);
             this.groupControl2.Controls.Add(this.BtnVazgec);
-            this.groupControl2.Location = new System.Drawing.Point(5, 370);
+            this.groupControl2.Location = new System.Drawing.Point(4, 405);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.ShowCaption = false;
             this.groupControl2.Size = new System.Drawing.Size(484, 46);
@@ -426,7 +439,7 @@
             this.groupControl6.Controls.Add(this.TxtAciklama);
             this.groupControl6.Controls.Add(this.labelControl2);
             this.groupControl6.Controls.Add(this.pictureEdit2);
-            this.groupControl6.Location = new System.Drawing.Point(4, 250);
+            this.groupControl6.Location = new System.Drawing.Point(4, 290);
             this.groupControl6.Name = "groupControl6";
             this.groupControl6.ShowCaption = false;
             this.groupControl6.Size = new System.Drawing.Size(485, 114);
@@ -479,6 +492,59 @@
             this.groupControl5.TabIndex = 11;
             this.groupControl5.Text = "groupControl5";
             // 
+            // lookUpEditKisi4
+            // 
+            this.lookUpEditKisi4.Location = new System.Drawing.Point(96, 59);
+            this.lookUpEditKisi4.Name = "lookUpEditKisi4";
+            this.lookUpEditKisi4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEditKisi4.Properties.DisplayMember = "AdSoyad";
+            this.lookUpEditKisi4.Properties.NullText = "Misafir Seçiniz";
+            this.lookUpEditKisi4.Properties.ValueMember = "MisafirID";
+            this.lookUpEditKisi4.Size = new System.Drawing.Size(380, 20);
+            this.lookUpEditKisi4.TabIndex = 13;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(33, 62);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(24, 13);
+            this.labelControl9.TabIndex = 4;
+            this.labelControl9.Text = "Kişi 4";
+            // 
+            // lookUpEditKisi3
+            // 
+            this.lookUpEditKisi3.Location = new System.Drawing.Point(96, 33);
+            this.lookUpEditKisi3.Name = "lookUpEditKisi3";
+            this.lookUpEditKisi3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.lookUpEditKisi3.Properties.DisplayMember = "AdSoyad";
+            this.lookUpEditKisi3.Properties.NullText = "Misafir Seçiniz";
+            this.lookUpEditKisi3.Properties.ValueMember = "MisafirID";
+            this.lookUpEditKisi3.Size = new System.Drawing.Size(380, 20);
+            this.lookUpEditKisi3.TabIndex = 13;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(33, 36);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(24, 13);
+            this.labelControl8.TabIndex = 4;
+            this.labelControl8.Text = "Kişi 3";
+            // 
+            // pictureEdit9
+            // 
+            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
+            this.pictureEdit9.Location = new System.Drawing.Point(7, 59);
+            this.pictureEdit9.Name = "pictureEdit9";
+            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit9.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit9.TabIndex = 0;
+            // 
             // lookUpEditKisi2
             // 
             this.lookUpEditKisi2.Location = new System.Drawing.Point(96, 7);
@@ -490,6 +556,19 @@
             this.lookUpEditKisi2.Properties.ValueMember = "MisafirID";
             this.lookUpEditKisi2.Size = new System.Drawing.Size(380, 20);
             this.lookUpEditKisi2.TabIndex = 13;
+            // 
+            // pictureEdit8
+            // 
+            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
+            this.pictureEdit8.Location = new System.Drawing.Point(7, 33);
+            this.pictureEdit8.Name = "pictureEdit8";
+            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit8.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit8.TabIndex = 0;
             // 
             // labelControl7
             // 
@@ -512,79 +591,85 @@
             this.pictureEdit7.Size = new System.Drawing.Size(20, 20);
             this.pictureEdit7.TabIndex = 0;
             // 
-            // pictureEdit8
+            // groupControl7
             // 
-            this.pictureEdit8.EditValue = ((object)(resources.GetObject("pictureEdit8.EditValue")));
-            this.pictureEdit8.Location = new System.Drawing.Point(7, 33);
-            this.pictureEdit8.Name = "pictureEdit8";
-            this.pictureEdit8.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit8.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit8.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit8.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit8.Size = new System.Drawing.Size(20, 20);
-            this.pictureEdit8.TabIndex = 0;
+            this.groupControl7.Controls.Add(this.TxtOdaNo);
+            this.groupControl7.Controls.Add(this.labelControl10);
+            this.groupControl7.Controls.Add(this.pictureEdit10);
+            this.groupControl7.Controls.Add(this.labelControl13);
+            this.groupControl7.Controls.Add(this.pictureEdit13);
+            this.groupControl7.Controls.Add(this.TxtToplam);
+            this.groupControl7.Location = new System.Drawing.Point(4, 250);
+            this.groupControl7.Name = "groupControl7";
+            this.groupControl7.ShowCaption = false;
+            this.groupControl7.Size = new System.Drawing.Size(485, 34);
+            this.groupControl7.TabIndex = 9;
+            this.groupControl7.Text = "groupControl4";
             // 
-            // labelControl8
+            // labelControl13
             // 
-            this.labelControl8.Location = new System.Drawing.Point(33, 36);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(24, 13);
-            this.labelControl8.TabIndex = 4;
-            this.labelControl8.Text = "Kişi 3";
+            this.labelControl13.Location = new System.Drawing.Point(33, 8);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(63, 13);
+            this.labelControl13.TabIndex = 7;
+            this.labelControl13.Text = "Toplam Tutar";
             // 
-            // lookUpEditKisi3
+            // pictureEdit13
             // 
-            this.lookUpEditKisi3.Location = new System.Drawing.Point(96, 33);
-            this.lookUpEditKisi3.Name = "lookUpEditKisi3";
-            this.lookUpEditKisi3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEditKisi3.Properties.DisplayMember = "AdSoyad";
-            this.lookUpEditKisi3.Properties.NullText = "Misafir Seçiniz";
-            this.lookUpEditKisi3.Properties.ValueMember = "MisafirID";
-            this.lookUpEditKisi3.Size = new System.Drawing.Size(380, 20);
-            this.lookUpEditKisi3.TabIndex = 13;
+            this.pictureEdit13.EditValue = ((object)(resources.GetObject("pictureEdit13.EditValue")));
+            this.pictureEdit13.Location = new System.Drawing.Point(7, 5);
+            this.pictureEdit13.Name = "pictureEdit13";
+            this.pictureEdit13.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit13.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit13.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit13.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit13.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit13.TabIndex = 5;
             // 
-            // pictureEdit9
+            // TxtToplam
             // 
-            this.pictureEdit9.EditValue = ((object)(resources.GetObject("pictureEdit9.EditValue")));
-            this.pictureEdit9.Location = new System.Drawing.Point(7, 59);
-            this.pictureEdit9.Name = "pictureEdit9";
-            this.pictureEdit9.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit9.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit9.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit9.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureEdit9.Size = new System.Drawing.Size(20, 20);
-            this.pictureEdit9.TabIndex = 0;
+            this.TxtToplam.Location = new System.Drawing.Point(96, 5);
+            this.TxtToplam.Name = "TxtToplam";
+            this.TxtToplam.Size = new System.Drawing.Size(149, 20);
+            this.TxtToplam.TabIndex = 6;
             // 
-            // labelControl9
+            // labelControl10
             // 
-            this.labelControl9.Location = new System.Drawing.Point(33, 62);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(24, 13);
-            this.labelControl9.TabIndex = 4;
-            this.labelControl9.Text = "Kişi 4";
+            this.labelControl10.Location = new System.Drawing.Point(277, 8);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(36, 13);
+            this.labelControl10.TabIndex = 15;
+            this.labelControl10.Text = "Oda No";
             // 
-            // lookUpEditKisi4
+            // pictureEdit10
             // 
-            this.lookUpEditKisi4.Location = new System.Drawing.Point(96, 59);
-            this.lookUpEditKisi4.Name = "lookUpEditKisi4";
-            this.lookUpEditKisi4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEditKisi4.Properties.DisplayMember = "AdSoyad";
-            this.lookUpEditKisi4.Properties.NullText = "Misafir Seçiniz";
-            this.lookUpEditKisi4.Properties.ValueMember = "MisafirID";
-            this.lookUpEditKisi4.Size = new System.Drawing.Size(380, 20);
-            this.lookUpEditKisi4.TabIndex = 13;
+            this.pictureEdit10.EditValue = ((object)(resources.GetObject("pictureEdit10.EditValue")));
+            this.pictureEdit10.Location = new System.Drawing.Point(252, 5);
+            this.pictureEdit10.Name = "pictureEdit10";
+            this.pictureEdit10.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit10.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit10.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit10.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.pictureEdit10.Size = new System.Drawing.Size(20, 20);
+            this.pictureEdit10.TabIndex = 14;
+            // 
+            // TxtOdaNo
+            // 
+            this.TxtOdaNo.Location = new System.Drawing.Point(327, 5);
+            this.TxtOdaNo.Name = "TxtOdaNo";
+            this.TxtOdaNo.Size = new System.Drawing.Size(149, 20);
+            this.TxtOdaNo.TabIndex = 16;
             // 
             // FrmRezervasyonKarti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 419);
+            this.ClientSize = new System.Drawing.Size(494, 455);
             this.Controls.Add(this.groupControl5);
             this.Controls.Add(this.groupControl6);
+            this.Controls.Add(this.groupControl7);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl3);
             this.Controls.Add(this.groupControl2);
@@ -630,12 +715,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookUpEditKisi2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
+            this.groupControl7.ResumeLayout(false);
+            this.groupControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit13.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtToplam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtOdaNo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -684,5 +776,12 @@
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.PictureEdit pictureEdit9;
         private DevExpress.XtraEditors.PictureEdit pictureEdit8;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit13;
+        private DevExpress.XtraEditors.TextEdit TxtToplam;
+        private DevExpress.XtraEditors.TextEdit TxtOdaNo;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit10;
     }
 }

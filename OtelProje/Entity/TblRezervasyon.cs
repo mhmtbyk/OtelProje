@@ -44,6 +44,8 @@ public partial class TblRezervasyon
 
     public Nullable<int> Kisi4 { get; set; }
 
+    public Nullable<decimal> Toplam { get; set; }
+
 
 
     public virtual TblDurum TblDurum { get; set; }

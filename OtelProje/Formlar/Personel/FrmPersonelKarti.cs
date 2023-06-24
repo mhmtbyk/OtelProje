@@ -29,7 +29,6 @@ namespace OtelProje.Formlar.Personel
 
         private void FrmPersonelKarti_Load(object sender, EventArgs e)
         {
-            this.Text = id.ToString();
 
             if (id != 0)
             {
