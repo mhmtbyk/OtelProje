@@ -40,13 +40,14 @@ namespace OtelProje.Formlar.Misafir
                     TxtTelefon.Text = misafir.Telefon;
                     TxtMail.Text = misafir.Mail;
                     TxtAciklama.Text = misafir.Aciklama;
+                    lookUpEditSehir.EditValue = misafir.sehir;
+                    lookUpEditUlke.EditValue = misafir.Ulke;
+                    lookUpEditIlce.EditValue = misafir.ilce;
                     pictureEditKimlikOn.Image = Image.FromFile(misafir.KimlikFoto1);
                     pictureEditKimlikArka.Image = Image.FromFile(misafir.KimlikFoto2);
                     kimlik1 = misafir.KimlikFoto1;
                     kimlik2 = misafir.KimlikFoto2;
-                    lookUpEditSehir.EditValue = misafir.sehir;
-                    lookUpEditUlke.EditValue = misafir.Ulke;
-                    lookUpEditIlce.EditValue = misafir.ilce;
+                    
                 }
                 //Ülke listesi
                 lookUpEditUlke.Properties.DataSource = (from x in db.TblUlke
@@ -122,20 +123,29 @@ namespace OtelProje.Formlar.Misafir
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            t.AdSoyad = TxtAdSoyad.Text;
-            t.TC = TxtTc.Text;
-            t.Telefon = TxtTelefon.Text;
-            t.Mail = TxtMail.Text;
-            t.Adres = TxtAdres.Text;
-            t.Aciklama = TxtAciklama.Text;
-            t.Durum = 1;
-            t.sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
-            t.ilce = int.Parse(lookUpEditIlce.EditValue.ToString());
-            t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
-            t.KimlikFoto1 = kimlik1;
-            t.KimlikFoto2 = kimlik2;
-            repo.TAdd(t);
-            XtraMessageBox.Show("Misafir sisteme başarılı bir şekilde kaydedildi.","Bilgi",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (pictureEditKimlikOn.Image != null && pictureEditKimlikArka.Image != null && lookUpEditUlke.EditValue != null && 
+                lookUpEditSehir.EditValue != null && lookUpEditIlce.EditValue != null)
+            {
+                t.AdSoyad = TxtAdSoyad.Text;
+                t.TC = TxtTc.Text;
+                t.Telefon = TxtTelefon.Text;
+                t.Mail = TxtMail.Text;
+                t.Adres = TxtAdres.Text;
+                t.Aciklama = TxtAciklama.Text;
+                t.Durum = 1;
+                t.sehir = int.Parse(lookUpEditSehir.EditValue.ToString());
+                t.ilce = int.Parse(lookUpEditIlce.EditValue.ToString());
+                t.Ulke = int.Parse(lookUpEditUlke.EditValue.ToString());
+                t.KimlikFoto1 = kimlik1;
+                t.KimlikFoto2 = kimlik2;
+                repo.TAdd(t);
+                XtraMessageBox.Show("Misafir sisteme başarılı bir şekilde kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                XtraMessageBox.Show("Lütfen boş alan bırakmayınız.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

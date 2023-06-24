@@ -43,6 +43,7 @@ namespace OtelProje.Formlar.AnaSayfa
                                                  x.Durum
 
                                              }).Where(y => y.Durum == 15).ToList();
+            gridView10.Columns["Durum"].Visible = false;
             //Ürün-Stok Listesi
             gridControlUrunStok.DataSource = (from x in db.TblUrun
                                                   select new

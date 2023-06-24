@@ -85,6 +85,8 @@ public partial class DbOtelEntities : DbContext
 
     public virtual DbSet<TblMesaj2> TblMesaj2 { get; set; }
 
+    public virtual DbSet<TblAdmin> TblAdmin { get; set; }
+
 
     public virtual ObjectResult<OdaDurum_Result> OdaDurum()
     {
