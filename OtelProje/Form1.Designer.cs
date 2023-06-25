@@ -114,6 +114,9 @@
             this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.BtnRaporSihirbazi = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -178,9 +181,10 @@
             this.BtnYeniKasaKarti,
             this.BtnResepsiyonHareketleri,
             this.BtnKasaCikisKarti,
-            this.BtnKasaCikisHareketleri});
+            this.BtnKasaCikisHareketleri,
+            this.BtnRaporSihirbazi});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 63;
+            this.ribbonControl1.MaxItemId = 64;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -192,7 +196,8 @@
             this.ribbonPage5,
             this.ribbonPage10,
             this.ribbonPage7,
-            this.ribbonPage9});
+            this.ribbonPage9,
+            this.ribbonPage11});
             this.ribbonControl1.Size = new System.Drawing.Size(884, 150);
             // 
             // barButtonItem1
@@ -873,6 +878,27 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // ribbonPage11
+            // 
+            this.ribbonPage11.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup18});
+            this.ribbonPage11.Name = "ribbonPage11";
+            this.ribbonPage11.Text = "Rapor Sihirbazı";
+            // 
+            // ribbonPageGroup18
+            // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.BtnRaporSihirbazi);
+            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
+            // 
+            // BtnRaporSihirbazi
+            // 
+            this.BtnRaporSihirbazi.Caption = "Rapor Sihirbazı";
+            this.BtnRaporSihirbazi.Id = 63;
+            this.BtnRaporSihirbazi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.BtnRaporSihirbazi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.BtnRaporSihirbazi.Name = "BtnRaporSihirbazi";
+            this.BtnRaporSihirbazi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnRaporSihirbazi_ItemClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -979,6 +1005,9 @@
         private DevExpress.XtraBars.BarButtonItem BtnResepsiyonHareketleri;
         private DevExpress.XtraBars.BarButtonItem BtnKasaCikisKarti;
         private DevExpress.XtraBars.BarButtonItem BtnKasaCikisHareketleri;
+        private DevExpress.XtraBars.BarButtonItem BtnRaporSihirbazi;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage11;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
     }
 }
 

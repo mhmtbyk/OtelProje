@@ -335,5 +335,11 @@ namespace OtelProje
             Formlar.Tanımlamalar.FrmKasa fr = new Formlar.Tanımlamalar.FrmKasa();
             fr.Show();
         }
+
+        private void BtnRaporSihirbazi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Raporlar.FrmRapor fr = new Formlar.Raporlar.FrmRapor();
+            fr.Show();
+        }
     }
 }
