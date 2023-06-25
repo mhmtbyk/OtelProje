@@ -292,10 +292,13 @@ namespace OtelProje
             Formlar.Admin.FrmSifreIslemleri fr = new Formlar.Admin.FrmSifreIslemleri();
             fr.Show();
         }
-
+        public string kullaniciRolu;
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            //if(kullaniciRolu != "B")
+            //{
+            //    ribbonPage6.Visible = false;
+            //}
             Formlar.AnaSayfa.FrmAnaSayfa fr = new Formlar.AnaSayfa.FrmAnaSayfa();
             fr.MdiParent = this;
             fr.Show();
@@ -304,6 +307,32 @@ namespace OtelProje
         private void BtnYetkiler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             Formlar.Admin.FrmSifreIslemleri fr = new Formlar.Admin.FrmSifreIslemleri();
+            fr.Show();
+        }
+
+        private void BtnResepsiyonHareketleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kasa.FrmResepsiyonHareketleri fr = new Formlar.Kasa.FrmResepsiyonHareketleri();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnKasaCikisKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kasa.FrmKasaCikisKarti fr = new Formlar.Kasa.FrmKasaCikisKarti();
+            fr.Show();
+        }
+
+        private void BtnKasaCikisHareketleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Kasa.FrmKasaCikisHareketListesi fr = new Formlar.Kasa.FrmKasaCikisHareketListesi();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void BtnYeniKasaKarti_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Formlar.Tanımlamalar.FrmKasa fr = new Formlar.Tanımlamalar.FrmKasa();
             fr.Show();
         }
     }

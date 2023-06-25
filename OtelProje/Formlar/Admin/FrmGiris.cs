@@ -26,7 +26,7 @@ namespace OtelProje.Formlar.Admin
             if (kullanici != null)
             {
                 Form1 frm = new Form1();
-                
+                frm.kullaniciRolu = kullanici.Rol;
                 frm.Show();
                 this.Hide();
             }
@@ -38,7 +38,7 @@ namespace OtelProje.Formlar.Admin
 
         private void FrmGiris_Load(object sender, EventArgs e)
         {
-            
+            Thread.Sleep(5000);
         }
     }
 }

@@ -46,6 +46,8 @@ public partial class TblRezervasyon
 
     public Nullable<decimal> Toplam { get; set; }
 
+    public Nullable<bool> KasayaAktar { get; set; }
+
 
 
     public virtual TblDurum TblDurum { get; set; }
